@@ -1,0 +1,12 @@
+{
+    "image4": {
+        "data": "hwQQADwAAAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}

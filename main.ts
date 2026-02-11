@@ -1,7 +1,12 @@
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    vy = -2.5
-})
+
 let vy = 0
+let alive = true
+
+function spawnPipe(x: number, y: number) {
+    
+}
+
+IntroScreen.RunIntro()
 let bird = sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
@@ -20,9 +25,20 @@ let bird = sprites.create(img`
     . . c b d d d d d 5 5 5 b b . . 
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
-forever(function () {
+
+forever(() => {
     if (vy < 1.5) {
         vy += 0.1
     }
     bird.y += vy
+    while (!alive) {
+        bird.vy = 0
+        bird.y = 40
+    }
+})
+
+
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    vy = -2.5
 })
