@@ -2,9 +2,24 @@ namespace SpriteKind {
     export const Pipe = SpriteKind.create()
 }
 
+//ask the player if the ycan jump high, determine game difficulty
+function determineJump() {
+    let can = game.ask("Can you jump?")
+    if (!can) {
+        game.gameOver(false)
+    }
+    let jump = game.ask("Can you jump really high?")
+    if (jump) {
+        return -2.5
+    }
+    return -2.3
+}
+
+let jumpHeight = determineJump()
+
 //jump logic
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    vy = -2.5
+    vy = jumpHeight
 })
 //spawn a pipe, handing top and bottom pipe logic
 function spawnPipe (x: number, y: number, top: boolean) {
@@ -25,9 +40,20 @@ function spawnPipe (x: number, y: number, top: boolean) {
     }
     return pipe
 }
+//initialize everything
 let pipe: Sprite = null
 let vy = 0
 let p1 = spawnPipe(160, 30, true)
+
+let g1 = sprites.create(assets.image`myImage2`, SpriteKind.Pipe)
+g1.setPosition(79.5, 116)
+let g2 = sprites.create(assets.image`myImage2`, SpriteKind.Pipe)
+g2.setPosition(238.5, 116)
+
+let ground = [
+    g1,
+    g2
+]
 
 let pipes = [
     [p1, spawnPipe(160, 80, false)],
@@ -35,6 +61,8 @@ let pipes = [
     [spawnPipe(280, 30, true), spawnPipe(280, 80, false)],
 ]
 
+
+scene.setBackgroundColor(9)
 let alive = true
 let bird = sprites.create(img`
     ..........ff........
@@ -97,9 +125,16 @@ forever(function () {
     if (bird.y < 0 || bird.y > 165) {
         die()
     }
+
+    for (let g of ground) {
+        g.x -= 1
+        if (g.right <= 0) {
+            g.left = 159
+        }
+    }
 })
 
-//rest the pipes and the player to their original poistions and velocity
+//rest the pipes and the player and ground to their original poistions and velocity
 function reset() {
     for (let p of sprites.allOfKind(SpriteKind.Pipe)) {
         p.destroy()
@@ -109,7 +144,16 @@ function reset() {
         [spawnPipe(220, 30, true), spawnPipe(220, 80, false)],
         [spawnPipe(280, 30, true), spawnPipe(280, 80, false)],
     ]
-
+    let g1 = sprites.create(assets.image`myImage2`, SpriteKind.Pipe)
+    g1.setPosition(79.5, 116)
+    let g2 = sprites.create(assets.image`myImage2`, SpriteKind.Pipe)
+    g2.setPosition(238.5, 116)
+    ground[0].destroy()
+    ground[1].destroy()
+    ground = [
+        g1,
+        g2
+    ]
     let vy = 0
     pause(200)
 }
