@@ -2,8 +2,7 @@
     "name": "Collaborative",
     "description": "",
     "dependencies": {
-        "device": "*",
-        "Intro-screen": "pub:95981-73531-23452-45534"
+        "device": "*"
     },
     "files": [
         "main.blocks",

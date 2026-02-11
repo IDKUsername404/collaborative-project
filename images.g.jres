@@ -1,8 +1,18 @@
 {
+    "image5": {
+        "data": "hwQQABAAAAAAAAAwMwMAAAAAADAAAwAAAAADMzMDAAAAADMzMwMAAAAwMzMzMwAAADAzAzAwAwAAMDMwMDMDAAAwAwMzMwMAADAwMAMzAwAAMAAzMwMDAAAwMzAAAwMAADAAAwAzAAAAAAMAADMAAAAAMAAAAwAAAAAAAzAwAAAAAAAwAzAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage0"
+    },
     "image4": {
-        "data": "hwQQADwAAAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAA==",
+        "data": "hwQQADwAAAD///////////////////////////////////////8AAFVVVf///////////////////////////////////wAAVVVVX1VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVAAB3d3dfVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVUAAFVVVV9VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVQAAd3d3f3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AABVVVV/V1VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVUAAHd3d393d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3VwAAd3d3f3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d/d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cAAHd3d393d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dwAAd3d3f3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3AAB3d3d/ZmZmZmZmZmZmZnZ3d3d3d3d3d3d3d3d3d3cAAGZmZm9mZmZmZmZmZmZmZmZmZmZ3d3d3d3d3d3d3dwAAZmZm////////////////////////////////////AAD///////////////////////////////////////8AAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage"
+    },
+    "image1": {
+        "data": "hwQQADwAAAD///////////////////////////////////////8AAP///////////////////////////////////1VVVQAAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX1VVVVAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVfV3d3cAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV9VVVVQAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3f3d3d3AABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVdfdVVVUAAHV3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d393d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3f3d3d3AAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d/d3d3cAAHd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d393d3dwAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3f3d3d3AAB3d3d3d3d3d3d3d3d3d3dnZmZmZmZmZmZmZvd3d3cAAHd3d3d3d3d3d3d3ZmZmZmZmZmZmZmZmZmZm9mZmZgAA////////////////////////////////////ZmZmAAD///////////////////////////////////////8AAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage1"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
