@@ -115,6 +115,10 @@ forever(function () {
         bird.vy = 0
         bird.y = 40
         if (controller.A.isPressed()) {
+            pause(1)
+            if (game.ask("Do you want to see highscores?")) {
+                displayScores()
+            }
             alive = true
             reset()
             info.setScore(0)
@@ -160,8 +164,10 @@ function reset() {
 
 //reusable function to kill player and display a message
 function die() {
-    alive = false
+    
     game.splash("You died!", "Score: " + info.score())
+    addScore(info.score())
+    alive = false
 }
 
 //handle collision with pipes
@@ -169,3 +175,21 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pipe, (player, pipe) => {
     die()
     
 })
+
+let scores: {[key: string]: number} = {
+    
+}
+
+function addScore(score: number) {
+    let name = game.askForString("Enter a name: ", 9)
+    scores[name] = score
+}
+
+function displayScores() {
+    let text = ""
+    Object.keys(scores).forEach((key) => {
+        const value = scores[key]
+        text += `${key}....${value}\n`
+    })
+    game.showLongText(text, DialogLayout.Full)
+}
