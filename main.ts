@@ -119,8 +119,9 @@ forever(function () {
             if (game.ask("Do you want to see highscores?")) {
                 displayScores()
             }
-            alive = true
             reset()
+            alive = true
+            
             info.setScore(0)
         }
         pause(1)
@@ -167,7 +168,9 @@ function die() {
     
     game.splash("You died!", "Score: " + info.score())
     addScore(info.score())
+    
     alive = false
+    game.splash("PRESS A TO PLAY AGAIN")
 }
 
 //handle collision with pipes
