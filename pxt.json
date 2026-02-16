@@ -2,7 +2,8 @@
     "name": "Collaborative",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "start_screen": "pub:79317-41757-98452-30054"
     },
     "files": [
         "main.blocks",
@@ -18,7 +19,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.0.63",
+        "target": "4.0.5",
         "targetId": "arcade"
     },
     "supportedTargets": [
