@@ -20,9 +20,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 // reusable function to kill player and display a message
 function die () {
     game.splash("You died!", "Score: " + info.score())
-    addScore(info.score())
     alive = false
-    game.splash("PRESS A TO PLAY AGAIN")
+    //game.splash("PRESS A TO PLAY AGAIN")
 }
 function displayScores () {
     Object.keys(scores).forEach((key) => {
@@ -68,10 +67,6 @@ console.log(pipe.x)
     }
     return pipe
 }
-function addScore (score: number) {
-    name = game.askForString("Enter a name: ", 9)
-    scores[name] = score
-}
 let name = ""
 let g22: Sprite = null
 let g12: Sprite = null
@@ -95,6 +90,7 @@ g2.setPosition(239, 116)
 ground = [g1, g2]
 pipes = [[p1, spawnPipe(160, 80, false)], [spawnPipe(220, 30, true), spawnPipe(220, 80, false)], [spawnPipe(280, 30, true), spawnPipe(280, 80, false)]]
 scene.setBackgroundColor(9)
+scene.setBackgroundImage(assets.image`myImage3`)
 alive = true
 let bird = sprites.create(img`
     ..........ff........
@@ -146,10 +142,6 @@ forever(function () {
         bird.vy = 0
         bird.y = 40
         if (controller.A.isPressed()) {
-            pause(1)
-            if (game.ask("Do you want to see highscores?")) {
-                displayScores()
-            }
             reset()
             alive = true
             info.setScore(0)
