@@ -91,6 +91,7 @@ ground = [g1, g2]
 pipes = [[p1, spawnPipe(160, 80, false)], [spawnPipe(220, 30, true), spawnPipe(220, 80, false)], [spawnPipe(280, 30, true), spawnPipe(280, 80, false)]]
 scene.setBackgroundColor(9)
 scene.setBackgroundImage(assets.image`myImage3`)
+StartScreen.greetScreen()
 alive = true
 let bird = sprites.create(img`
     ..........ff........
